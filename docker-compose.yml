@@ -1,0 +1,20 @@
+services:
+  mine:
+    build: .
+    environment:
+      - APP_MODULE=app
+      - FLASK_DEBUG=${FLASK_DEBUG:-0}
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./logs/mine:/app/logs
+
+  teacher:
+    build: .
+    environment:
+      - APP_MODULE=classwork
+      - FLASK_DEBUG=${FLASK_DEBUG:-0}
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./logs/classwork:/app/logs

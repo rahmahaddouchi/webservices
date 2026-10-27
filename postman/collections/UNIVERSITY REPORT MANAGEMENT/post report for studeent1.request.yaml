@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{base_url}}/student/1/report"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"DEVELOPPING MCP\",\r
+
+    \    \"type\": \"INTERNSHIP\"\r
+
+    }"
+order: 3000

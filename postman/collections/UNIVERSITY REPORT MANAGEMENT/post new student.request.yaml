@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{base_url}}/students/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \        \"FN\": \"Rahma\",\r
+
+    \        \"LN\": \"Mastouri\",\r
+
+    \        \"reports\": [\r
+
+    \            {\"title\": \"Sales\", \"type\": \"internship\"}\r
+
+    \        ]}"
+order: 2000

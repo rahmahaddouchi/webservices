@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://127.0.0.1:5000/students
+method: POST
+body:
+  type: json
+  content: '["Ali", "Karoui", "Senior", 5]'
+order: 7000

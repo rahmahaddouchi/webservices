@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: "{{base_url}}/student/2/report"
+method: GET
+order: 5000
